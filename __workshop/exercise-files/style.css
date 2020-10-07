@@ -1,1 +1,104 @@
-/* add css here */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    font-family: "Jost";
+} 
+
+input, button { 
+    border: 1px solid rgba(85, 85, 85, 0.747);
+    border-radius: 2px;
+}
+
+body { 
+    display:flex; 
+    justify-content: center;
+    background-color: #f2f2f2;
+}
+
+h1 { 
+    font-weight: bold;
+    text-align: center;
+    padding: 10px 5px 40px 5px;
+    font-size: 40px;
+}
+
+.wrapper { 
+    position: absolute;
+    top:32px;
+    max-width: 475px;
+    padding: 24px;
+    background-color: white;
+    border-radius: 16px;
+    box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.02), 0 6.7px 5.3px rgba(0, 0, 0, 0.028),
+    0 12.5px 10px rgba(0, 0, 0, 0.035), 0 22.3px 17.9px rgba(0, 0, 0, 0.042),
+    0 41.8px 33.4px rgba(0, 0, 0, 0.05), 0 100px 80px rgba(0, 0, 0, 0.07);
+}
+
+.inputDiv { 
+    margin: 5px;
+    display:flex;
+    justify-content: space-between;
+}
+
+input { 
+    width: 250px; 
+    background-color: white;
+}
+
+.termsOfService >input { 
+    width: 15px;
+}
+
+label { 
+    width: 150px;
+    text-align: right;
+    padding: 0px 15px 0px 0px;
+}
+
+.termsOfService { 
+    border-radius: 4px;
+    background-color: #f2f2f2;
+    text-align: center;
+    margin: 40px 5px 20px 5px;
+    padding: 15px 0px;
+}
+
+footer { 
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 5px 5px 5px;
+}
+
+button { 
+    width: 130px;
+    padding: 10px 0px;
+    border: none; 
+    color:white;
+}
+
+.clearButton { 
+    background-color: hsl(333deg, 100%, 44%);
+}
+
+.submitButton { 
+    background-color: hsl(256deg, 100%, 44%);
+}
+
+.errorMessage { 
+    display: none;
+    border-radius: 4px;
+    font-weight: bold;
+    margin: 5px;
+    text-align: center;
+    padding: 10px;
+    background-color: hsla(333deg, 100%, 44%, 0.25);
+}
+
+input:focus { 
+    box-shadow: 0 0 5px blue;
+} 

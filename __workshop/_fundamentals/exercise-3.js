@@ -19,6 +19,18 @@ const people = [
 
 function fullName(peopleArr) {
   // return something
+  let name = ""; 
+  let namesArr=[]; 
+  peopleArr.forEach ((element)=> { 
+    if (element['name']['middle']) { 
+      name= element['name']['first']+" "+element['name']['middle']+" "+element['name']['last'];
+      namesArr.push(name);
+    } else { 
+      name= element['name']['first']+" "+element['name']['last'];
+      namesArr.push(name);
+    };
+  }); 
+  return namesArr;
 }
 
 // 2. Do a console.log to verify your function.

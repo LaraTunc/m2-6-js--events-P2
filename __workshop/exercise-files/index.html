@@ -5,10 +5,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link href="style.css" rel="stylesheet" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-
+    <link
+  href="https://fonts.googleapis.com/css?family=Jost:400,700&display=swap"
+  rel="stylesheet"/>
     <title>Signup Form</title>
   </head>
   <body>
+
+    <div class="wrapper">
+      <h1>Signup Form</h1>
+      <form>
+        <div class="inputDiv">
+          <label for="fullName">Full name:</label>
+          <input type="text" id="fullName" name="fullName" autocomplete="name" required>
+        </div>
+        <div class="inputDiv">
+          <label for="address">Street address</label>
+          <input type="text" id="address" name="address" autocomplete="street-address" required>
+        </div>
+        <div class="inputDiv">
+          <label for="email">Email address</label>
+          <input type="email" id="email" name="email" autocomplete="email" required>
+        </div>
+        <div class="inputDiv">
+          <label for="phone">Phone number</label>
+          <input type="text" id="phone" name="phone" autocomplete="tel" required>
+        </div>
+        <div class="inputDiv">
+          <label for="password">Password</label>
+          <input type="text" id="password" name="password" autocomplete="new-password" required>
+        </div>
+        <div class="inputDiv">
+          <label for="confirmPassword">Confirm Password</label>
+          <input type="text" id="confirmPassword" name="confirmPassword" autocomplete="new-password" required>
+        </div>
+        <div class="termsOfService">
+          <input type="checkbox" id="termsOfService" name="termsOfService">
+          <label for="termsOfService"> I agree to the <a href="#">terms of service</a>. </label>
+        </div>
+        <div class="errorMessage"></div>
+        <footer class="footer">
+          <button class="clearButton">Clear</button>
+          <button class="submitButton" type="submit" name="submit">Submit</button>
+        </footer>
+      </form>
+    </div>
+
     <script src="script.js"></script>
   </body>
 </html>

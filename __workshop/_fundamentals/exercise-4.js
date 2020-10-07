@@ -19,6 +19,10 @@ const people = [
 
 function olderPeople(peopleArr, age) {
   // return something
+  let old = peopleArr.filter ((element)=> { 
+    return element['age']>age;
+  }); 
+  return old;
 }
 
 // 2. Do a console.log to verify your function.
